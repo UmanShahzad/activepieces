@@ -59,6 +59,7 @@ import {
 } from './components/chat-empty-state';
 import { ComposerHandle } from './components/chat-input';
 import {
+  ExposeScrollToBottom,
   KeepBottomOnFooterGrowth,
   MatchScrollGutter,
 } from './components/chat-scroll-sync';
@@ -217,6 +218,7 @@ function ChatBoxContent({
       value: shownChoice,
     });
 
+  const scrollToBottomRef = useRef<(() => void) | null>(null);
   const [hasSentMessage, setHasSentMessage] = useState(false);
   const historyLoading = isLoadingHistory && !isNil(conversationId);
 
@@ -235,6 +237,7 @@ function ChatBoxContent({
         await setModelPick(chatUtils.pickOf({ choice: shownChoice }));
       }
       setHasSentMessage(true);
+      scrollToBottomRef.current?.();
       await sendMessage(text.trim(), files, options);
     },
     [
@@ -544,6 +547,7 @@ function ChatBoxContent({
               <MatchScrollGutter footerRef={footerRef} />
               <KeepBottomOnFooterGrowth footerRef={footerRef} />
               <ReportScrolledUp />
+              <ExposeScrollToBottom scrollToBottomRef={scrollToBottomRef} />
             </ChatContainerRoot>
           </motion.div>
         )}
