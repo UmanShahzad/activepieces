@@ -2217,6 +2217,9 @@
       ],
       "@activepieces/piece-connectuc": [
         "packages/pieces/community/connectuc/src/index.ts"
+      ],
+      "@activepieces/piece-vpndetection": [
+        "packages/pieces/community/vpndetection/src/index.ts"
       ]
     },
     "resolveJsonModule": true

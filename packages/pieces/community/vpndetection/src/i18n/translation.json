@@ -1,0 +1,12 @@
+{
+  "Detect VPN, Tor, relay, proxy, hosting and bot IP addresses, with location and ASN.": "Detect VPN, Tor, relay, proxy, hosting and bot IP addresses, with location and ASN.",
+  "Create a free account at https://app.vpndetection.io and copy an API key from it.\n\nEvery key answers the VPN, Tor and relay flags, location and ASN. A paid plan, or a new account's trial, adds hosting, proxy, CDN and bot detection with the detail behind each.": "Create a free account at https://app.vpndetection.io and copy an API key from it.\n\nEvery key answers the VPN, Tor and relay flags, location and ASN. A paid plan, or a new account's trial, adds hosting, proxy, CDN and bot detection with the detail behind each.",
+  "Lookup IP": "Lookup IP",
+  "Lookup IPs": "Lookup IPs",
+  "Checks whether an IP address is a VPN, Tor, relay, proxy, hosting or bot address, with its location and ASN.": "Checks whether an IP address is a VPN, Tor, relay, proxy, hosting or bot address, with its location and ASN.",
+  "Checks up to 1000 IP addresses in one call. Needs a key on a paid plan.": "Checks up to 1000 IP addresses in one call. Needs a key on a paid plan.",
+  "IP Address": "IP Address",
+  "IP Addresses": "IP Addresses",
+  "The IPv4 or IPv6 address to check.": "The IPv4 or IPv6 address to check.",
+  "The addresses to check, at most 1000. Duplicates are looked up once.": "The addresses to check, at most 1000. Duplicates are looked up once."
+}

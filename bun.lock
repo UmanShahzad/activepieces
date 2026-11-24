@@ -9990,6 +9990,20 @@
         "tslib": "^2.3.0",
       },
     },
+    "packages/pieces/community/vpndetection": {
+      "name": "@activepieces/piece-vpndetection",
+      "version": "0.0.1",
+      "dependencies": {
+        "@activepieces/core-piece-types": "workspace:*",
+        "@activepieces/core-utils": "workspace:*",
+        "@activepieces/pieces-common": "workspace:*",
+        "@activepieces/pieces-framework": "workspace:*",
+      },
+      "devDependencies": {
+        "tslib": "^2.3.0",
+        "vitest": "5.0.5",
+      },
+    },
     "packages/pieces/community/vtex": {
       "name": "@activepieces/piece-vtex",
       "version": "0.3.1",
@@ -13064,6 +13078,8 @@
     "@activepieces/piece-voipstudio": ["@activepieces/piece-voipstudio@workspace:packages/pieces/community/voipstudio"],
 
     "@activepieces/piece-vouchery-io": ["@activepieces/piece-vouchery-io@workspace:packages/pieces/community/vouchery-io"],
+
+    "@activepieces/piece-vpndetection": ["@activepieces/piece-vpndetection@workspace:packages/pieces/community/vpndetection"],
 
     "@activepieces/piece-vtex": ["@activepieces/piece-vtex@workspace:packages/pieces/community/vtex"],
 
